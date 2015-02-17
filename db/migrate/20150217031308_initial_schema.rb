@@ -10,7 +10,7 @@ class InitialSchema < ActiveRecord::Migration
       t.integer  :category_id
     end
 
-    create_table :listing do |t|
+    create_table :listings do |t|
       t.string    :title
       t.text     :description 
       t.string   :city
