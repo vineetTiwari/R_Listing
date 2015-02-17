@@ -1,4 +1,4 @@
-* This is my very rudimentary version of Craigslist.
+* This is my very rudimentary clone of Craigslist.
 
 * Ruby Version  -2.2.0p0
 
