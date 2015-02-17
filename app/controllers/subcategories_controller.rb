@@ -1,4 +1,6 @@
-class subcategoriesController < ApplicationController
+class SubcategoriesController < ApplicationController
 
+  def show
+  end
 
 end
