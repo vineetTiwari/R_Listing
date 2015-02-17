@@ -1,4 +1,4 @@
-class subcategory < ActiveRecord::Base
+class Subcategory < ActiveRecord::Base
 
   belongs_to :category
 

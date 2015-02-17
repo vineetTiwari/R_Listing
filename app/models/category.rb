@@ -1,6 +1,6 @@
 class Category < ActiveRecord::Base
 
-  has_many :subcategories, dependent: :destory
-  has_many :listings, dependent: :destory
+  has_many :subcategories
+  has_many :listings
 
 end
