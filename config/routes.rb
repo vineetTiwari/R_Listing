@@ -4,7 +4,11 @@ Rails.application.routes.draw do
     resources :subcategories
   end
 
-  resources :listings 
+  resources :listings do
+    collection do
+      get 'search'
+    end
+  end
 
   match '/help',    to: 'pages#help',    via: :get
   match '/scams',   to: 'pages#scams',   via: :get
