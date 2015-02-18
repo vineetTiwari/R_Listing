@@ -16,7 +16,7 @@ class ListingsController < ApplicationController
 
   def search
     location = params[:location]
-    unless location.index(",")
+    if location.present? && !location.index(",")
       params[:location] = "#{location}, BC"
     end
     @listings = Listing.search(params)
