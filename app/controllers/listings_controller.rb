@@ -6,6 +6,7 @@ class ListingsController < ApplicationController
 
   def create
     @listing = Listing.new listing_params
+    @listing.user = current_user
     @listing.save
     redirect_to @listing
   end
@@ -20,6 +21,10 @@ class ListingsController < ApplicationController
       params[:location] = "#{location}, BC"
     end
     @listings = Listing.search(params)
+  end
+
+  def mylistings
+    @listings = Listing.where(user: current_user)
   end
 
   private
