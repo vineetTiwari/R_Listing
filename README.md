@@ -12,6 +12,7 @@
 
 gem 'hirb'
 gem 'geocoder'
+gem 'devise'
 
 ```
 * Checkout the Github repo for 'geocoder' to see how it is implimented  

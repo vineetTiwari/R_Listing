@@ -107,6 +107,9 @@
   border-bottom: 1px solid #ccc;
   height: 40px;
 }
+#category {
+  width: 110px;
+}
 .leftbar {
   float: left;
   width: 19%;
@@ -357,4 +360,8 @@
 .notice {
     background:#e3f7fc url('images/notice.png') no-repeat 10px 50%;
     border:1px solid #8ed9f6;
+}
+
+body {
+ background: url('b.jpg');
 }

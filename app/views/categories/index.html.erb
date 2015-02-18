@@ -3,7 +3,13 @@
     <a href="#"><h1>vinnyslist</h1></a>
     <ul>
       <%= link_to 'post to classifieds', new_listing_path %>
-      <li>my account</li>
+      <% if user_signed_in? %>
+        <li><%= link_to 'my account', edit_user_registration_path %></li>
+        <li><%= link_to 'log out', destroy_user_session_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to 'log in', new_user_session_path %></li>
+        <li><%= link_to 'sign up', new_user_registration_path %></li>
+      <% end %>
     </ul>
       <%= form_tag search_listings_path, method: :get do |f| %>
         <p>search vinnyslist</p>
