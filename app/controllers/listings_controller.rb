@@ -15,7 +15,11 @@ class ListingsController < ApplicationController
   end
 
   def search
-    @listing = Listing.search(params)
+    location = params[:location]
+    unless location.index(",")
+      params[:location] = "#{location}, BC"
+    end
+    @listings = Listing.search(params)
   end
 
   private

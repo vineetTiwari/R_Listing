@@ -14,4 +14,4 @@ gem 'hirb'
 gem 'geocoder'
 
 ```
-    
+* Checkout the Github repo for 'geocoder' to see how it is implimented  
