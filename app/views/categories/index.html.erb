@@ -17,7 +17,7 @@
         <%= text_field_tag :search, nil, placeholder: 'search' %>
         <%= text_field_tag :location, nil, placeholder: 'where' %>
         <%= select_tag :category, options_for_select(Category.all.map{ |c| [c.name, c.id] })%>
-        <%= submit_tag '>' %>
+        <%= submit_tag '>', class: 'btn btn-default' %>
       <% end %>
   </div>
   <div class="center-column" >
