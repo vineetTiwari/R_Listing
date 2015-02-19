@@ -13,6 +13,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'hirb'
 gem 'devise'
 gem 'bootstrap-sass'
+gem 'slide-down-alerts-rails'
 
 group :development, :test do
   gem 'byebug'
